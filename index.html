@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>INFONET - Timeline</title>
+  <link rel="icon" href="infonet_logo.png">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
     *,
@@ -34,7 +35,7 @@
       width: 100vw;
       position: fixed;
       top: 0;
-      background: #F8EDED; 
+      background: #EEEDEB; 
       z-index: 2;
     }
 
@@ -135,19 +136,44 @@
       transform: translate(50%, -50%);
       right: calc(100% + var(--col-gap) + var(--line-w) / 2);
     }
-
+    ul li .title,
     ul li .descr {
       background: var(--bgColor);
       position: relative;
       padding-inline: 1.5rem;
     }
 
-    ul li .descr {
+    ul li .title {
+      overflow: hidden;
       padding-block-start: 1.5rem;
+      padding-block-end: 1rem;
+      font-weight: 510;
+      text-align: center;
+    }
+
+    ul li .descr {
       padding-block-end: 1.5rem;
       font-weight: 300;
     }
 
+    ul li .descr1 {
+      padding-block-start: 1.5rem;
+    }
+    
+    p {
+      margin: 1rem 0; 
+      padding: 0.5rem 0; 
+    }
+
+    .size{
+      font-weight: 500;
+    }
+    
+    ul li .descr p {
+      margin: 0.5rem 0;
+      padding: 0; 
+    }
+    ul li .title::before,
     ul li .descr::before {
       content: "";
       position: absolute;
@@ -158,6 +184,10 @@
       border-radius: 50%;
       filter: blur(8px);
       transform: translate(-50%, 50%);
+    }
+
+    ul li .title::before {
+      bottom: calc(100% + 0.125rem);
     }
 
     ul li .descr::before {
@@ -207,83 +237,92 @@
     <ul>
       <li style="--accent-color:#41516C">
         <div class="date">2005</div>
-        <div class="descr">Established – Imperial Communication & Started a Branch in Namakkal.</div>
+        <div class="descr descr1">Established <B class="size">ICE Net</B> at Namakkal.</div>
       </li>
       <li style="--accent-color:#FBCA3E">
         <div class="date">2006</div>
-        <div class="descr">Started Rasipuram & attur.</div>
+        <div class="descr descr1">Launched <B class="size">Rasipuram & Attur</B>.</div>
       </li>
       <li style="--accent-color:#E24A68">
         <div class="date">2007</div>
-        <div class="descr">Started Cuddalore Branch.</div>
+        <div class="descr descr1">Launched <B class="size">Cuddalore</B>.</div>
       </li>
       <li style="--accent-color:#1B5F8C">
         <div class="date">2008</div>
-        <div class="descr">Started Dharmapuri Branch.</div>
+        <div class="descr descr1">Launched <b class="size">Dharmapuri</b>.</div>
       </li>
       <li style="--accent-color:#4CADAD">
         <div class="date">2009</div>
-        <div class="descr">Started Kallakurichi Branch.</div>
+        <div class="descr descr1">Launched <b class="size">Kallakurichi</b>.</div>
       </li>
       <li style="--accent-color:#41516C">
         <div class="date">2010</div>
-        <div class="descr">Started Karur Branch.</div>
+        <div class="descr descr1">Launched <b class="size">Karur</b>.</div>
       </li>
       <li style="--accent-color:#FBCA3E">
         <div class="date">2011</div>
-        <div class="descr">Started Pallipalayam, Komarapalayam, Sulur Branch.</div>
+        <div class="descr descr1">Launched <b class="size">Pallipalayam, Komarapalayam, Sulur</b>.</div>
       </li>
       <li style="--accent-color:#E24A68">
         <div class="date">2012</div>
-        <div class="descr">Started ICE network to Infonet Comm Enterprises to B class Licences.</div>
+        <div class="descr descr1">ICE network merged with <b class="size">Infonet Comm Enterprises</b>.</div>
       </li>
       <li style="--accent-color:#1B5F8C">
         <div class="date">2013</div>
-        <div class="descr">Employee care awards function Initiated.</div>
+        <div class="descr descr1"><b class="size">Annual Award function Initiated</b>.</div>
       </li>
       <li style="--accent-color:#4CADAD">
         <div class="date">2014</div>
-        <div class="descr">20 Branches for across Tamilnadu.</div>
+        <div class="descr descr1">Expended operation to <b class="size">20 Districts</b>.</div>
       </li>
       <li style="--accent-color:#41516C">
         <div class="date">2015</div>
-        <div class="descr">Our own data center in Chennai is associated with Cambium Products for our service.</div>
+        <div class="descr descr1">Collaborate with <b class="size">Cambium</b> to set up our <b class="size">own data center</b>.</div>
       </li>
       <li style="--accent-color:#FBCA3E">
         <div class="date">2016</div>
-        <div class="descr">The government project for Kallakurichi District fully covered CCTV surveillance.</div>
+        <div class="title">Kallakurichi Town</div>
+        <div class="descr"><b class="size">1st government Project</b> Kallakurichi town Implemental for covering CCTV surveillance. </div>
       </li>
       <li style="--accent-color:#E24A68">
         <div class="date">2017</div>
-        <div class="descr">Associate with Indus Towers unconnected to connect.</div>
+        <div class="descr descr1">collaborate with <b class="size">Indus Tower</b> to connect the unconnected.</div>
       </li>
       <li style="--accent-color:#1B5F8C">
         <div class="date">2018</div>
-        <div class="descr">inaugurate Head office - Infonet Head in Namakkal & Govt School project inauguration.</div>
+        <div class="descr descr1">Expended operations at our own <b class="size">Ho Office</b> in Namakkal.</div>
       </li>
       <li style="--accent-color:#4CADAD">
         <div class="date">2019</div>
-        <div class="descr">Students at 1 Lakes perform the morning assessment test via our internet as part of the Government Project for Tamilnadu Schools Connectivity 6030.</div>
+        <div class="title">Our Flash ship Government School Project</div>
+        <div class="descr"><p class="space">Connected <b class="size">6029 Government Schools</b> through ILL Internet.</p>
+        <p class="space">To Specialists more than Lake's student writing assessment tests daily.</p>
+        <p class="space">Monitor by the Command Control Center at <b class="size">DPI Campus Chennai</b>.</p></div>
       </li>
       <li style="--accent-color:#41516C">
         <div class="date">2020</div>
-        <div class="descr">Skill development & Own Ifra structure geographic coverage to Tamilnadu 95%.</div>
+        <div class="descr descr1"><p>Covered geographic <b class="size">95% Tamilnadu</b> with our own Infrastructure.</p>
+          <p>Collaborate with the <b class="size">Ministry of Rural Development</b>.</p></div>
       </li>
       <li style="--accent-color:#FBCA3E">
         <div class="date">2021</div>
-        <div class="descr">Agritech Solutions associate with Greenmark Natural Framing. FTTH Business implementation to 300 Km Laying for across Tamilnadu.</div>
+        <div class="title">FTTH Business</div>
+        <div class="descr"><p class="space">Laying <b class="size">500Km of Fiber</b> Across Tamilnadu.</p>
+        <p>Incorporated <b class="size">Greenmark Techindia Pvt Ltd</b> Providing Agritech solutions & promoting maximum Green organic farming.</p></div>
       </li>
       <li style="--accent-color:#E24A68">
         <div class="date">2022</div>
-        <div class="descr">40+ Branch & Own Infonet Infra in Tamilnadu leading service provider.</div>
+        <div class="descr descr1">Emerge leading service provider by covering <b class="size">40+ branches</b> in all 39 districts of Tamilnadu.</div>
       </li>
       <li style="--accent-color:#1B5F8C">
         <div class="date">2023</div>
-        <div class="descr">Achieved Skill Development scheme for “Naan Mudhalvan” to top 10 Companies. & Leaser Technology project for Google X.</div>
+        <div class="title">PM WANI</div>
+        <div class="descr"><p class="space">National Award Winner for connecting the entire Tamilnadu State.</p>
+        <p>Singed MOU with the government of Tamilnadu Under the <b class="size">“Naan Mudhalvan”</b> scheme to train 10,000 Unemployed youth.</p></div>
       </li>
       <li style="--accent-color:#4CADAD">
         <div class="date">2024</div>
-        <div class="descr">We leading internet service provider (PAN INDIA). Completed Election counting CCTV Surveillance in across Tamilnadu.</div>
+        <div class="descr descr1">Infonet host Keep <b class="size">Going</b>, Keep <b class="size">Growing</b>.</div>
       </li>
     </ul>
   </div>
